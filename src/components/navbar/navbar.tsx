@@ -10,11 +10,10 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-  const fileUrl =
-    "https://drive.google.com/file/d/1GrNYHmOCBL-6n_08DEm5wURMj7UjvJE2/view?usp=sharing";
+  const fileUrl = "https://drive.google.com/file/d/11SYjrAkLg5pAfdpfyyun8K66isc0fzig/view?usp=sharing";
   const handleDownload = () => {
-    // window.open(fileUrl, '_blank');
-    toast.info("You don't have access !");
+    window.open(fileUrl, "_blank");
+    // toast.info("You don't have access !");
   };
   return (
     <div className="text-white flex justify-between sticky top-0 z-50 bg-black items-center h-24 max-w-full mx-auto px-4">
@@ -32,6 +31,9 @@ const Navbar = () => {
         </li>
         <li className="p-4">
           <a href="#about">About</a>
+        </li>
+        <li className="p-4">
+          <a href="#experience">Experience</a>
         </li>
         <li className="p-4">
           <a href="#project">Projects</a>
@@ -71,6 +73,9 @@ const Navbar = () => {
           </li>
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
             <a href="#about">About</a>
+          </li>
+          <li onClick={handleNav} className="p-4 border-b border-gray-600">
+            <a href="#experience">Experience</a>
           </li>
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
             <a href="#project">Projects</a>
