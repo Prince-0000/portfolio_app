@@ -5,12 +5,12 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from 'react-icons/si';
 
 const Dashboard = () => {
-  // const [text] = useTypewriter({
-  //   words: ["Developer", "Coder"],
-  //   loop: {},
-  //   typeSpeed: 100,
-  //   deleteSpeed: 100,
-  // });
+  const [text] = useTypewriter({
+    words: ["Developer", "Coder"],
+    loop: 0,
+    typeSpeed: 100,
+    deleteSpeed: 100,
+  });
   const leetcodeUrl = "https://leetcode.com/Prince_0001/";
   const instagramUrl = "https://www.instagram.com/prince_mehta01/";
   const linkedinUrl = "https://www.linkedin.com/in/prince0000";
@@ -24,7 +24,7 @@ const Dashboard = () => {
         <h1 className="md:text-5xl sm:text-5xl text-4xl font-bold md:py-6 ">
           PRINCE MEHTA
         </h1>
-        {/* <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <p className="md:text-5xl sm:text-4xl sm:pt-10 text-xl font-bold py-4"></p>
           <span className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2">
             <span>A </span>
@@ -33,7 +33,7 @@ const Dashboard = () => {
               <Cursor />
             </span>
           </span>
-        </div> */}
+        </div>
         <p className="md:text-2xl text-xl font-bold text-gray-500 px-2 mt-4">
         Unlocking Efficiency with Full-Stack Mastery & DSA Insights
         </p>

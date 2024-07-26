@@ -19,9 +19,9 @@ const About = () => {
           </h1>
           <p>
             {" "}
-            I am a third year B.Tech CS student at Graphic Era Hill Univerity. I
-            am a skilled web developer with experience in both front-end and
-            back-end development. I am also a proficient coder with strong
+            I am a fourth year B.Tech CS student at Graphic Era Hill Univerity. I
+            am a skilled full stack developer with experience in front-end development. 
+            I am also a proficient coder with strong
             problem-solving skills. I am dedicated and hardworking, with a
             passion for software development. I am also flexible and adaptive,
             able to quickly learn new technologies and adapt to new situations.
