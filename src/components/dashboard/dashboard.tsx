@@ -19,7 +19,7 @@ const Dashboard = () => {
     <div id="home" className="text-white">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center items-center flex flex-col justify-center">
         <p className="text-[#00df9a] font-bold md:mb-[-10px] p-2">
-          HEY THERE I'M
+          HEY THERE I&apos;M
         </p>
         <h1 className="md:text-5xl sm:text-5xl text-4xl font-bold md:py-6 ">
           PRINCE MEHTA
