@@ -12,11 +12,11 @@ const Card: React.FC<CardProps> = ({ image, title, liveUrl, codeUrl }):JSX.Eleme
   return (
     <div className="w-full shadow-xl flex flex-col p-12 my-5 rounded-lg hover:scale-105 duration-300">
       <Image
-        className="w-[200px] mt-[-3rem] mx-auto bg-white rounded-md"
+        className="w-[200px] mt-[-3rem] mx-auto bg-white rounded-md object-cover"
         src={image}
-        alt={title} // Using title as alt for accessibility
+        alt={title}
       />
-      <h2 className="text-2xl font-bold text-center py-8">{title}</h2>
+      <h2 className="text-xl font-bold text-center py-3">{title}</h2>
       <button className="bg-[#00df9a] w-[200px] rounded-md font-medium mx-auto my-6 px-6 py-3 text-black">
         <a href={liveUrl} target="_blank" rel="noreferrer">
           Live Demo

@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="#skills">Skills</a>
         </li>
         <li className="p-4">
-          <a href="#footer">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <button
           onClick={handleDownload}
