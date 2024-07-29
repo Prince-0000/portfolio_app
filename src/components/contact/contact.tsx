@@ -2,7 +2,7 @@
 import { CgMail } from "react-icons/cg";
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-const Footer = () => {
+const Contact = () => {
   const handleEmailClick = () => {
     window.location.href = "mailto:princemehta516@gmail.com";
   };
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <div className="md:pl-[120px] pl-[45px] pb-[-50px]">
           <h5 className="pb-4">Contact Info</h5>
-          <button onClick={handleEmailClick} className="text-3xl">
+          <button type="button" onClick={handleEmailClick} className="text-3xl">
             <CgMail />
           </button>
         </div>
@@ -54,4 +54,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contact;

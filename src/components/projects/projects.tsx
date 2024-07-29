@@ -2,7 +2,6 @@
 import Card from "./card";
 import Dukaan from "@/assests/grocery.png";
 import Counterfeit from "@/assests/counterfiet.png";
-import Workout from "@/assests/workout.png";
 import Movie from "@/assests/movie.png";
 import Voice from "@/assests/voice.png"
 import Health from "@/assests/health.png"
@@ -13,43 +12,53 @@ const Projects = () => {
     {
       image: Voice,
       title: "Movie Recommendation App",
+      tech:["React Fiber", "Three.js", "OpenAI", "Google Cloud", "Python", "FastAPI", "Tailwind"],
       liveUrl: "https://virtual-girlfriend-mauve.vercel.app",
-      codeUrl: "https://github.com/Prince-0000/movies_frontend"
+      codeUrl: "https://github.com/Prince-0000/movies_frontend",
+      description:"Developed an AI voice assistant similar to google assistant but with a unique twist, we introduced a 3D model which acts like a virtual girlfriend. Users can talk to model and have fun"
     },
     {
       image: Movie,
       title: "Movie Recommendation App",
+      tech:["React", "API", "Tailwind","FastAPI","AWS","Docker","TF-IDF", "NLP"],
       liveUrl: "https://filmfusion-neon.vercel.app",
-      codeUrl: "https://github.com/Prince-0000/movies_frontend"
+      codeUrl: "https://github.com/Prince-0000/movies_frontend",
+      description:"I developed a movie recommendation app that suggests movies based on user searches, helping users discover similar films they might enjoy. This technology is commonly used on platforms like Netflix and Amazon Prime to enhance user experience."
     },
     {
       image: Health,
       title: "Health Predictor",
+      tech:["React", "API", "Tailwind","FastAPI","AWS","Docker", "Logistics Regression"],
       liveUrl: "https://predoctor.vercel.app",
-      codeUrl: "https://github.com/Prince-0000/health_frontend"
+      codeUrl: "https://github.com/Prince-0000/health_frontend",
+      description:"I developed a health prediction web app that takes data from user and analyzes user input to predict the likelihood of certain diseases. Currently, the app can assess the risk of heart disease and diabetes"
     },
     {
       image: Dukaan,
       title: "Grocery App",
+      tech:["React Fiber", "Three.js", "Python", "FastAPI"],
       liveUrl: "https://dukaann.vercel.app",
-      codeUrl: "https://github.com/Prince-0000/grocery_web_app"
+      codeUrl: "https://github.com/Prince-0000/grocery_web_app",
+      description:"This web application allows users to purchase groceries, similar to JioMart. Users can log in or sign up using Google authentication, browse products by category, sort the products for easier navigation, after adding product to cart, user can complete their purchases through Stripe."
     },
     {
       image: Counterfeit,
       title: "Counterfeit",
+      tech:["React", "API", "Tailwind","ETher.js",'Block-chain'],
       liveUrl: "",
-      codeUrl: "https://github.com/Prince-0000/Counterfeit"
+      codeUrl: "https://github.com/Prince-0000/Counterfeit",
+      description:"A web app built on Ethereum Blockchain using Solidity and React.js Developed a web app that uses blockchain technology to verify the product is authentic or not. Companies can register their product on blockchain and, Made it easy for consumers to verify the authenticity of products."
     },
   ];
 
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    if (slider !== null) slider.scrollLeft -= 500;
+    if (slider !== null) slider.scrollLeft -= slider.clientWidth;
   };
 
   const slideRight = () => {
     var slider = document.getElementById("slider");
-    if (slider !== null) slider.scrollLeft += 500;
+    if (slider !== null) slider.scrollLeft += slider.clientWidth;
   };
 
   return (
@@ -71,8 +80,10 @@ const Projects = () => {
               key={index}
               image={project.image}
               title={project.title}
+              tech={project.tech}
               liveUrl={project.liveUrl}
               codeUrl={project.codeUrl}
+              description={project.description}
             />
           ))}
         </div>
