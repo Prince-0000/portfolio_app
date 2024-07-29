@@ -11,7 +11,7 @@ const Projects = () => {
   const projects = [
     {
       image: Voice,
-      title: "Movie Recommendation App",
+      title: "Virtual Girlfriend",
       tech:["React Fiber", "Three.js", "OpenAI", "Google Cloud", "Python", "FastAPI", "Tailwind"],
       liveUrl: "https://virtual-girlfriend-mauve.vercel.app",
       codeUrl: "https://github.com/Prince-0000/movies_frontend",
@@ -19,7 +19,7 @@ const Projects = () => {
     },
     {
       image: Movie,
-      title: "Movie Recommendation App",
+      title: "Movie Recommendation",
       tech:["React", "API", "Tailwind","FastAPI","AWS","Docker","TF-IDF", "NLP"],
       liveUrl: "https://filmfusion-neon.vercel.app",
       codeUrl: "https://github.com/Prince-0000/movies_frontend",

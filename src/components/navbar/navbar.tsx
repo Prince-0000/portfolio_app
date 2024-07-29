@@ -39,9 +39,6 @@ const Navbar = () => {
           <a href="#project">Projects</a>
         </li>
         <li className="p-4">
-          <a href="#skills">Skills</a>
-        </li>
-        <li className="p-4">
           <a href="#contact">Contact</a>
         </li>
         <button
@@ -81,10 +78,7 @@ const Navbar = () => {
             <a href="#project">Projects</a>
           </li>
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#skills">Skills</a>
-          </li>
-          <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#footer">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <button
             onClick={handleDownload}

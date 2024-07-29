@@ -20,7 +20,7 @@ const Experience = () => {
   ];
 
   return (
-    <div id="skills" className="w-full py-16 text-white px-4">
+    <div id="experience" className="w-full py-16 text-white px-4">
       <div className="w-full mx-auto flex justify-center items-center mt-[-30px]">
         <h1 className="md:text-4xl sm:text-3xl text-xl text-[#00df9a] font-bold mx-auto">
           Experience
