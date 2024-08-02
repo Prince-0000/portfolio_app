@@ -3,12 +3,21 @@ import Card from "./card";
 import Dukaan from "@/assests/grocery.png";
 import Counterfeit from "@/assests/counterfiet.png";
 import Movie from "@/assests/movie.png";
-import Voice from "@/assests/voice.png"
-import Health from "@/assests/health.png"
+import Voice from "@/assests/voice.png";
+import Health from "@/assests/health.png";
+import PowerBI from "@/assests/powerbi.png";
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from "react-icons/bs";
 
 const Projects = () => {
   const projects = [
+    {
+      image: PowerBI,
+      title: `Credit Card Dashboard`,
+      tech: ["SQL", "Power BI"],
+      liveUrl: "",
+      codeUrl: "",
+      description: "In this Power BI project, I developed an end-to-end dashboard for data analysis. The process included data extraction, transformation, and loading (ETL), followed by creating data models and designing interactive visualizations. I leveraged Power BI's DAX functions and advanced features to build insightful reports and dashboards."
+    },
     {
       image: Voice,
       title: "Virtual Girlfriend",
@@ -71,7 +80,7 @@ const Projects = () => {
         id="slider"
         className="mt-[-3rem] w-full bg-white py-[7rem] px-4 overflow-x-scroll scroll whitespace-nowrap scroll-smooth no-scrollbar"
       >
-        <div className="absolute top-1/2 left-5 transform -translate-y-1/2 cursor-pointer bg-white opacity-50 hover:opacity-100">
+        <div className="absolute z-50 top-1/2 left-5 transform -translate-y-1/2 cursor-pointer bg-white opacity-50 hover:opacity-100">
           <BsFillArrowLeftSquareFill onClick={slideLeft} size={30} />
         </div>
         <div className="px-[2rem] w-full mx-auto grid grid-flow-col auto-cols-max gap-8">
@@ -87,7 +96,7 @@ const Projects = () => {
             />
           ))}
         </div>
-        <div className="absolute top-1/2 right-5 transform -translate-y-1/2 cursor-pointer bg-white opacity-50 hover:opacity-100">
+        <div className="z-50 absolute top-1/2 right-5 transform -translate-y-1/2 cursor-pointer bg-white opacity-50 hover:opacity-100">
           <BsFillArrowRightSquareFill onClick={slideRight} size={30} />
         </div>
       </div>
