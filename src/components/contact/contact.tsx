@@ -1,12 +1,13 @@
 "use client"
 import { CgMail } from "react-icons/cg";
-import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from 'react-icons/si';
 
 const Contact = () => {
   const handleEmailClick = () => {
     window.location.href = "mailto:princemehta516@gmail.com";
   };
-  const discordUrl = "https://discord.gg/8asyB8ZU";
+  const leetcodeUrl = "https://leetcode.com/Prince_0001/";
   const instagramUrl = "https://www.instagram.com/prince_mehta01/";
   const linkedinUrl = "https://www.linkedin.com/in/prince0000";
   const githubUrl = "https://github.com/Prince-0000";
@@ -21,8 +22,8 @@ const Contact = () => {
         </h1>
         <p className="py-4 text-lg">Follow me on social media handle</p>
         <div className="flex justify-between md:w-[75%] my-6">
-          <a href={discordUrl} target="_blank" rel="noreferrer">
-            <FaDiscord size={30} />
+          <a href={leetcodeUrl} target="blank">
+            <SiLeetcode size={30} />
           </a>
           <a href={instagramUrl} target="_blank" rel="noreferrer">
             <FaInstagram size={30} />
