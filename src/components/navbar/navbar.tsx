@@ -10,7 +10,8 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-  const fileUrl = "https://drive.google.com/file/d/1pylPolQr6ShQ34MTteaLBzYkc76QgaY3/view?usp=sharing";
+  // const fileUrl = "https://drive.google.com/file/d/1pylPolQr6ShQ34MTteaLBzYkc76QgaY3/view?usp=sharing";
+  const fileUrl = "https://drive.google.com/file/d/1bKqoe9LMn1HlxzqGf6S9h7Ei4StPmvgu/view?usp=sharing"
   const handleDownload = () => {
     window.open(fileUrl, "_blank");
     // toast.info("You don't have access !");
