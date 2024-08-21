@@ -10,8 +10,7 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-  // const fileUrl = "https://drive.google.com/file/d/1pylPolQr6ShQ34MTteaLBzYkc76QgaY3/view?usp=sharing";
-  const fileUrl = "https://drive.google.com/file/d/1bKqoe9LMn1HlxzqGf6S9h7Ei4StPmvgu/view?usp=sharing"
+  const fileUrl = "https://drive.google.com/file/d/1pylPolQr6ShQ34MTteaLBzYkc76QgaY3/view?usp=sharing"
   const handleDownload = () => {
     window.open(fileUrl, "_blank");
     // toast.info("You don't have access !");
@@ -23,7 +22,7 @@ const Navbar = () => {
           href="/"
           className="w-full md:text-3xl text-2xl font-bold text-[#00df9a]"
         >
-          PORTFOLIO
+          PRINCE
         </a>
       </h1>
       <ul className="hidden md:flex">
@@ -63,7 +62,7 @@ const Navbar = () => {
         }
       >
         <h1 className="w-full md:text-3xl text-2xl font-bold text-[#00df9a] m-4">
-          PORTFOLIO
+          PRINCE
         </h1>
         <ul className="uppercase p-4">
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
