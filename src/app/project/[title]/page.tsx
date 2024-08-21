@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 const ProjectDetail = () => {
   const [projectData, setProjectData] = useState<any>(null);
@@ -25,9 +26,12 @@ const ProjectDetail = () => {
         {/* col1 */}
         <div>
           {" "}
-          <img
+          <Image
+            loading="lazy"
             src={projectData.image}
             alt={projectData.title}
+            width={500}
+            height={500}
             className="w-full h-auto mb-4"
           />
         </div>
@@ -42,16 +46,16 @@ const ProjectDetail = () => {
             {" "}
             <p className="text-xl mb-4">{projectData.description}</p>
           </div>
-          <div className="mt-3 mb-6">
-                  {projectData.tech.map((value:string, index:number) => (
-                    <div
-                      key={index}
-                      className="text-sm mr-2 md:mt-0 sm:mb-0 mb-3 border-2 border-[#38705e] text-gray-200 px-2 py-1 inline-block rounded-full"
-                    >
-                      {value}
-                    </div>
-                  ))}
-                </div>
+          <div className="mb-6">
+            {projectData.tech.map((value: string, index: number) => (
+              <div
+                key={index}
+                className="text-sm mr-2 sm:mt-2 sm:mb-0 mb-3 border-2 border-[#38705e] text-gray-200 px-2 py-1 inline-block rounded-full"
+              >
+                {value}
+              </div>
+            ))}
+          </div>
           {/* row3 */}
           <div className="flex sm:flex-row flex-col justify-start items-start">
             <button className="bg-[#00DF9A] w-[200px] rounded-md font-medium sm:mr-3 sm:my-6 py-3 text-black">

@@ -1,16 +1,11 @@
-"use client"
+"use client";
 import { CgMail } from "react-icons/cg";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from 'react-icons/si';
+import { socialLinks } from "@/utils/socialLinks";
 
 const Contact = () => {
   const handleEmailClick = () => {
     window.location.href = "mailto:princemehta516@gmail.com";
   };
-  const leetcodeUrl = "https://leetcode.com/Prince_0001/";
-  const instagramUrl = "https://www.instagram.com/prince_mehta01/";
-  const linkedinUrl = "https://www.linkedin.com/in/prince0000";
-  const githubUrl = "https://github.com/Prince-0000";
   return (
     <div
       id="contact"
@@ -22,18 +17,17 @@ const Contact = () => {
         </h1>
         <p className="py-4 text-lg">Follow me on social media handle</p>
         <div className="flex justify-between md:w-[75%] my-6">
-          <a href={leetcodeUrl} target="blank">
-            <SiLeetcode size={30} />
-          </a>
-          <a href={instagramUrl} target="_blank" rel="noreferrer">
-            <FaInstagram size={30} />
-          </a>
-          <a href={linkedinUrl} target="_blank" rel="noreferrer">
-            <FaLinkedinIn size={30} />
-          </a>
-          <a href={githubUrl} target="_blank" rel="noreferrer">
-            <FaGithub size={30} />
-          </a>
+          {socialLinks.map((item, index) => (
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+              style={{ margin: "0 10px" }}
+            >
+              <item.icon size={30} />
+            </a>
+          ))}
         </div>
       </div>
       <div className="lg:col-span-2 flex flex-row justify-evenly">
